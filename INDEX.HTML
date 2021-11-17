@@ -11,7 +11,38 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/73c4ca1b43.js" crossorigin="anonymous"></script>
 
+     
+
     <title>M2-D8</title>
+    <style>
+     .exe-first{
+       border: 3px solid black;
+       border-radius:50px;
+     }
+      
+      .exe-first> div:first-of-type { 
+        width:auto;
+        min-height:400px;
+        border-right: 2px solid black;
+      }
+
+      .exe-first>div:nth-of-type(2)  {
+        width:auto;
+        min-height:400px;
+      }
+
+      .exe-first>div:nth-of-type(3) div:nth-of-type(1){
+      background-color: rgb(241, 232, 142);
+      }
+      .exe-first>div:nth-of-type(3) div:nth-of-type(2){
+      background-color: rgb(238, 238, 86);
+      }
+      .exe-first>div:nth-of-type(3) div:nth-of-type(3){
+      background-color: yellow;
+      }
+      
+
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -30,13 +61,27 @@
         </div>
       </nav>
 
+
+      <div class="container mt-5 mb-5">
+        <div class="container-fluid row exe-first  overflow-hidden p-0 m-0 ">
+          <div class="col bg-success h-100 d-flex justify-content-center align-items-center text-white">First Column<br/> justify-content center<br/>height-100</div>
+          <div class="col-2 bg-primary  w-100 h-100 d-flex justify-content-center align-items-end text-white">Second Column<br/> bottom</div>
+          <div class="col  p-0 m-0 d-flex flex-column text-center">
+            <div class="col third-1  d-flex justify-content-center align-items-center">Third Column Part 1</div>
+            <div class=" col third-2  d-flex justify-content-center align-items-center">Third Column Part 2</div>
+            <div class=" col third-3  d-flex justify-content-center align-items-center">Third Column Part 3</div>
+          </div>
+        </div>
+      </div>
+
+
 <div class="container">
 <div class="row">
 
 
   
   <div class="col-12 col-md-8">
-   <h1>Page Heading</h1>
+   <h1>Page Heading <span class="h2 text-secondary" >Secondary text</span></h1>
       <div class="card">
         <img src="https://via.placeholder.com/300*300
 
